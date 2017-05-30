@@ -4,4 +4,4 @@
 <button class="btn btn-primary" (click)="createServer()"> Create Server </button>
 {{serverName}}
 <hr/>
-<app-server *ngFor="let server of servers"></app-server>
+<app-server *ngFor="let server of servers; let i = index"></app-server>
