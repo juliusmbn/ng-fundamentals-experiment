@@ -12,6 +12,7 @@ export class ServerComponent{
    serverName:string = "";
    serverCreated:boolean = false;
    serverStatus: string = "";
+   
    constructor(){
        this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
    }
