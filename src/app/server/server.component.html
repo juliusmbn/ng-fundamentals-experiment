@@ -26,5 +26,8 @@
 </ng-template>
 
 <!-- Directives: attribute directives -->
-<p [ngStyle]="{backgroundColor:getColor()}"> Server </p>
+<!-- ngStyle is attribute Directive -->
+<p [ngStyle]="{backgroundColor:getColor()}"
+   [ngClass]="{online: serverStatus === 'online'}" > Server </p>
+
 
