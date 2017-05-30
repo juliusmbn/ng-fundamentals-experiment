@@ -10,8 +10,10 @@ export class ServerComponent{
 
    allowNewServer:boolean = false;
    serverName:string = "";
+   serverCreated:boolean = false;
    clicker(){
        console.log("hello");
+       this.serverCreated = true;
    }
 
    onUpdateServerName(event: Event){
