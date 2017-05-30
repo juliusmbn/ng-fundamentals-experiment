@@ -1,7 +1,21 @@
 <div>
     This is Server! {{test}}
 </div>
+
+<label></label>
+
+<!-- event binding with passing data -->
+<input type="text" (input)="onUpdateServerName($event)" />
+<p>{{ serverName }}</p>
+
+<!-- Two Way Data Binding -->
+<input type="text" [(ngModel)]="serverName" />
+
+
+<!-- property binding -->
 <button class="btn btn-primary" [disabled]="!allowNewServer"> Submit </button>
+
+<!-- event binding -->
 <button class="btn btn-primary" (click)="clicker()"> Clicker </button>
 
 

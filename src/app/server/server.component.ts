@@ -9,8 +9,12 @@ export class ServerComponent{
    test:string = "String Interpolation";
 
    allowNewServer:boolean = false;
-
-   clicker = function(){
+   serverName:string = "";
+   clicker(){
        console.log("hello");
+   }
+
+   onUpdateServerName(event: Event){
+        this.serverName = (<HTMLInputElement>event.target).value;
    }
 }
